@@ -8,9 +8,7 @@ function App() {
         <div className='container'>
             <DataProvider>
                 <Header />
-
                 <Records />
-
                 <AddNewRecord />
             </DataProvider>
         </div>
