@@ -1,78 +1,75 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
 
-
 body {
-  background-color: rgb(77, 14, 84);  
+    background-color: rgb(77, 14, 84);
 }
 
 .main {
-  height: 100%;
-  font-family: 'Poppins', sans-serif;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .container {
-  width: 900px;
-  box-shadow: 1px 1px 1px 1px rgb(106, 18, 116);
-  background-color: whitesmoke;
-  padding: 30px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+    width: 900px;
+    box-shadow: 1px 1px 1px 1px rgb(106, 18, 116);
+    background-color: whitesmoke;
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .header {
-  font-size: 30px;
-  color: black;
-  max-width: 290px;
+    font-size: 30px;
+    color: black;
+    max-width: 290px;
 }
 
 .questions {
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 
 .card {
-  border: solid 1px rgb(196, 192, 192);
-  box-shadow: 1px 1px 10px 1px rgb(233, 223, 223);
-  padding-inline: 10px;
-  width: 580px;
-  padding: 20px;
-  margin-bottom: 10px;
+    border: solid 1px rgb(196, 192, 192);
+    box-shadow: 1px 1px 10px 1px rgb(233, 223, 223);
+    padding-inline: 10px;
+    width: 580px;
+    padding: 20px;
+    margin-bottom: 10px;
 }
 
 .question {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .question p {
-  margin: 0;
-  font-size: 17px;
-  font-weight: bolder;
-  margin-left: 10px;
+    margin: 0;
+    font-size: 17px;
+    font-weight: bolder;
+    margin-left: 10px;
 }
 
 .question i {
-  margin-right: 10px;
-  border: solid 1px;
-  border-radius: 50%;
-  padding: 10px;
-  background-color: rgb(248, 239, 239);
-  cursor: pointer;
-  color: brown;
+    margin-right: 10px;
+    border: solid 1px;
+    border-radius: 50%;
+    padding: 10px;
+    background-color: rgb(248, 239, 239);
+    cursor: pointer;
+    color: brown;
 }
 
 .question i:hover {
-  box-shadow: 1px 1px 10px 7px rgb(236, 228, 228);
+    box-shadow: 1px 1px 10px 7px rgb(236, 228, 228);
 }
 
 .answer {
-  max-width: 520px;
-  margin-left: 10px;
-
+    max-width: 520px;
+    margin-left: 10px;
 }
-
