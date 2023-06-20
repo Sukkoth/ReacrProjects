@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 const Question = ({ question }) => {
     const [showAnswer, setShowAnswer] = useState(false);
     return (
-        <div className='card' key={question.id}>
+        <div className='card'>
             <div className='question'>
                 <p>{question.question}</p>
                 <i
