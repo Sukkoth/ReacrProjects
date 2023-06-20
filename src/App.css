@@ -1,0 +1,88 @@
+body {
+    background-color: rgb(215, 235, 235);
+}
+#root {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    a:nth-of-type(2) .logo {
+        animation: logo-spin infinite 20s linear;
+    }
+}
+
+.header {
+    font-size: 35px;
+}
+
+.card {
+    padding: 1em;
+    padding-top: 10px;
+    padding-bottom: 40px;
+    width: 700px;
+    border-radius: 10px;
+    box-shadow: 4px 3px 10px 5px rgb(224, 224, 236);
+    background-color: rgb(246, 252, 252);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.avatar {
+    margin-top: 20px;
+    max-width: 150px;
+    max-height: 150px;
+    display: flex;
+    justify-content: center;
+}
+
+.avatar img {
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: 4px 3px 10px 5px rgb(174, 174, 199);
+}
+
+.name {
+    color: rgb(0, 0, 0);
+    letter-spacing: 1px;
+    font-size: 18px;
+    font-weight: bolder;
+    padding: 0;
+    margin: 10px 0 0px 0px;
+}
+
+.title {
+    margin: 1px 0 0 0;
+    font-size: 15px;
+    color: rgb(57, 145, 145);
+    font-weight: bolder;
+}
+
+.review_text {
+    max-width: 540px;
+}
+
+.navigations {
+    margin-top: 20px;
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+}
+
+i {
+    color: rgb(48, 189, 142);
+    font-size: 20px;
+}
+
+.surprise {
+    margin-top: 20px;
+    background-color: rgb(197, 223, 228);
+    color: rgb(47, 157, 179);
+}
+
+.surprise button:hover {
+    border-color: rgb(197, 223, 228);
+}
