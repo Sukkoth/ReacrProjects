@@ -1,5 +1,6 @@
-import Question from './Question'
-import dataSet from './data'
+import './App.css'
+import dataSet from './data' //this is an array
+import Question from './Question' // this one is component
 function App() {
   return (
     <main className='main'>
