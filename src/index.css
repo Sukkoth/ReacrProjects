@@ -6,7 +6,6 @@
 }
 
 .container {
-    width: 1300px;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -29,10 +28,10 @@
     margin-bottom: 40px;
 }
 .filters {
-    width: 400px;
+    width: 100%;
     padding: 10px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     margin-bottom: 80px;
 }
 
@@ -45,6 +44,7 @@
     border-radius: 7px;
     font-weight: bolder;
     text-transform: capitalize;
+    margin-right: 15px;
 }
 
 .filterButton:hover {
@@ -104,4 +104,64 @@
     letter-spacing: 0.04rem;
     margin-top: 0;
     color: rgb(123, 135, 145);
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .container {
+        width: 90%;
+    }
+    .filters {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .filterButton {
+        margin-bottom: 10px;
+    }
+
+    .menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu .food {
+        width: 80%;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu .food {
+        width: 70%;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 950px) {
+    .container {
+        width: 80%;
+        flex-direction: column;
+    }
+    .menu {
+        flex-flow: row wrap;
+    }
+    .menu .food {
+        width: calc(100% / 2.2);
+    }
+}
+
+@media only screen and (min-width: 1350px) {
+    .container {
+        width: 70%;
+    }
+    .menu .food {
+        width: calc(100% / 3.2);
+    }
 }
