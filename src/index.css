@@ -1,0 +1,108 @@
+:root {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    background-color: rgb(249, 250, 252);
+    --primary-orange: rgb(243, 157, 9);
+}
+
+.container {
+    width: 1400px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 80px;
+}
+
+.container h1 {
+    font-size: 40px;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+
+.container .title-underline {
+    background-color: var(--primary-orange);
+    border-width: 1px;
+    width: 7rem;
+    height: 0.25rem;
+    margin-bottom: 40px;
+}
+.filters {
+    width: 400px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 80px;
+}
+
+.filterButton {
+    background-color: var(--primary-orange);
+    color: white;
+    padding: 8px 15px 8px 15px;
+    border: none;
+    font-size: 17px;
+    border-radius: 7px;
+    font-weight: bolder;
+    text-transform: capitalize;
+}
+
+.filterButton:hover {
+    border: none;
+    background-color: rgb(191, 97, 14);
+    box-shadow: 8px 8px 10px 2px rgb(220, 216, 216);
+    cursor: pointer;
+}
+
+.menu {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.food {
+    border: solid 1px whitesmoke;
+    width: 440px;
+    margin-bottom: 40px;
+    background-color: rgb(255, 252, 252);
+    box-shadow: 0px 1px 6px 6px rgb(245, 242, 238);
+}
+
+.img {
+    width: 100%;
+    height: 250px;
+    display: block;
+    object-fit: cover;
+}
+
+.title {
+    padding: 0px 15px 15px 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.title .foodName {
+    font-size: 20px;
+    text-transform: capitalize;
+    margin-bottom: 5px;
+}
+
+.title .price {
+    background-color: var(--primary-orange);
+    color: white;
+    font-size: 20px;
+    padding: 3px 15px;
+    align-self: center;
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+
+.foodDescription {
+    padding: 0px 15px 15px 15px;
+    font-size: 16px;
+    font-size: 20px;
+    letter-spacing: 0.04rem;
+    margin-top: 0;
+    color: rgb(123, 135, 145);
+}
