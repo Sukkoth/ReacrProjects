@@ -1,35 +1,29 @@
+import Content from './Content';
+import Navigation from './Navigation';
+import useFetchData from './useFetchData';
+import { useState } from 'react';
+
 function App() {
+    const { data, isLoading } = useFetchData(
+        'https://course-api.com/react-tabs-project'
+    );
+    const [display, setDisplay] = useState(0);
     return (
         <main className='container'>
-            <div className='navigation'>
-                <button className='navButton'>Tommy</button>
-                <button className='navButton'>BIGDROP</button>
-                <button className='navButton'>CUKER</button>
-            </div>
-            <div className='content'>
-                <h3>Full Stack Web Developer</h3>
-                <p className='company'>Tommy</p>
-                <p className='date'>December 2015 - present</p>
-                <ul className='duties'>
-                    <li>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing
-                        elit. Perspiciatis quibusdam optio, illo cupiditate quas
-                        eveniet! Hic pariatur ipsam debitis omnis?
-                    </li>
-                    <li>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing
-                        elit. Perspiciatis quibusdam optio, illo cupiditate quas
-                        eveniet! Hic pariatur ipsam debitis omnis?
-                    </li>
-                    <li>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing
-                        elit. Perspiciatis quibusdam optio, illo cupiditate quas
-                        eveniet! Hic pariatur ipsam debitis omnis?
-                    </li>
-                </ul>
-            </div>
+            {!isLoading && (
+                <>
+                    <Navigation
+                        data={data}
+                        display={display}
+                        setDisplay={setDisplay}
+                    />
+                    <Content
+                        basic={data[display]}
+                        duties={data[display]?.duties}
+                    />
+                </>
+            )}
         </main>
     );
 }
-
 export default App;
